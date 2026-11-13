@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171815">
+  <meta name="description" content="Цифровая выставка о саках: археология, степные общества и наследие древнего Казахстана.">
+  <title>Саки — цифровой музей степи</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./ui.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Саки — на главную"><span class="brand-mark">С</span><span>ПАМЯТЬ<br>СТЕПИ</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+      <a href="#story">Выставка</a><a href="#timeline">Хронология</a><a href="#map">Территория</a><a href="#sites">Памятники</a><a href="#sources">Источники</a>
+    </nav>
+    <a class="header-cta" href="#story">Начать путешествие <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Степной ландшафт на закате, памятник древней истории"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> ЦИФРОВАЯ ИСТОРИЧЕСКАЯ ВЫСТАВКА · ЦЕНТРАЛЬНАЯ АЗИЯ</p>
+        <h1 id="hero-title">Голоса<br>древней <em>степи</em></h1>
+        <p class="hero-lede">Саки — мир кочевых и оседлых сообществ, чья история раскрывается в курганах, металле и рассказах античных авторов.</p>
+        <a class="round-link" href="#story"><span>Исследовать выставку</span><span class="round-arrow" aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-meta"><span>VIII–III вв. до н. э.</span><span>Казахстан и Центральная Азия</span></div>
+      <div class="hero-index">01 <span>— 12</span></div>
+    </section>
+    <section class="intro section-pad" id="story">
+      <div class="section-kicker">01 / ВСТУПЛЕНИЕ</div>
+      <div class="intro-grid">
+        <h2>Не одно племя.<br><em>Целый мир</em>.</h2>
+        <div class="intro-copy"><p class="lead">«Саки» — название, которым персидские источники обозначали разные группы населения восточной части степного мира.</p><p>Это не единое государство и не самоназвание всех сообществ. За словом скрываются разные союзы и традиции, известные нам по археологии и разным письменным свидетельствам. Выставка сосредоточена на территории современного Казахстана и показывает её связи с соседними областями.</p><a class="text-link" href="#origins">Открыть контекст <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="fact-strip"><div><span class="fact-number">01</span><span>Археология<br>как свидетельство</span></div><div><span class="fact-number">02</span><span>Степные<br>пути и контакты</span></div><div><span class="fact-number">03</span><span>Наследие<br>в диалоге эпох</span></div></div>
+    </section>
+    <section class="origins section-pad" id="origins">
+      <div class="section-heading"><div class="section-kicker">02 / ИСТОЧНИКИ И ВРЕМЯ</div><h2>История — это<br><em>слои свидетельств</em></h2></div>
+      <div class="origin-columns"><p>Сведения о саках складываются из нескольких источников: надписей Ахеменидской державы, античной литературы и археологических находок. Их нельзя считать взаимозаменяемыми: каждый источник говорит о прошлом со своей позиции.</p><p>В персидских царских надписях встречаются названия сакских групп, в том числе «саки-тиграхауда» — «саки в остроконечных шапках». Границы и точное соответствие этих названий археологическим культурам остаются предметом научного обсуждения.</p></div>
+      <div class="note"><span class="note-mark">i</span><p><strong>Как читать выставку.</strong> Даты археологических комплексов часто приблизительны. Там, где интерпретация не единственная, мы отмечаем это отдельно и не выдаём гипотезы за установленный факт.</p></div>
+    </section>
+    <section class="timeline-section section-pad" id="timeline">
+      <div class="section-heading"><div class="section-kicker">03 / ИНТЕРАКТИВНАЯ ХРОНОЛОГИЯ</div><h2>Следы во <em>времени</em></h2><p>Выберите эпоху, чтобы увидеть, какие свидетельства дошли до нас.</p></div>
+      <div class="timeline-shell"><div class="timeline-track" role="tablist" aria-label="Периоды истории сакских сообществ" id="timeline-tabs"></div><article class="timeline-card" aria-live="polite" id="timeline-detail"></article></div>
+    </section>
+    <section class="map-section section-pad" id="map">
+      <div class="section-heading"><div class="section-kicker">04 / ПРОСТРАНСТВО</div><h2>Степь без <em>границ</em></h2><p>Не территория единого государства, а широкий мир сообществ и маршрутов.</p></div>
+      <div class="map-layout"><div class="map-visual" role="img" aria-label="Схематичная карта Центральной Азии с обозначением степных регионов и археологических памятников"><div class="map-grid"></div><div class="map-land"></div><div class="map-label label-north">Южная Сибирь</div><div class="map-label label-east">Алтай</div><div class="map-label label-west">Приаралье</div><div class="map-label label-south">Согдиана</div><div class="map-label label-center">СТЕПИ КАЗАХСТАНА</div><span class="map-pin pin-issyk"><i></i><b>Иссык</b></span><span class="map-pin pin-besh"><i></i><b>Бесшатыр</b></span><span class="map-pin pin-shilik"><i></i><b>Шиликты</b></span><div class="map-caption">Схема регионов и памятников · не в масштабе</div></div><div class="map-copy"><span class="map-number">47° N<br>68° E</span><h3>От предгорий<br>до великих равнин</h3><p>Сакские памятники известны в разных природных зонах современного Казахстана — от Жетысу и Алтая до Центрального Казахстана и Приаралья. Различия погребальных обрядов и инвентаря показывают региональное разнообразие.</p><p>Связи степи с Ахеменидским Ираном, оазисами Средней Азии и более восточными регионами видны в обмене вещами, технологиями и художественными мотивами. Они не означают единой политической системы.</p><a class="text-link" href="#sites">Памятники на карте <span aria-hidden="true">↘</span></a></div></div>
+    </section>
+    <section class="peoples section-pad" id="peoples"><div class="section-kicker">05 / НАРОДЫ И ОБЩЕСТВО</div><div class="peoples-grid"><h2>Разнообразие<br>степных <em>сообществ</em></h2><div><p class="lead">Названия в источниках описывают группы с разных точек зрения — и не всегда совпадают с тем, что археологи видят в материальной культуре.</p><p>Античные авторы упоминают массагетов у восточного побережья Каспия и в соседних областях. Персидские надписи выделяют группы с отличительными названиями. Современные исследователи сопоставляют эти сведения осторожно: география и значение названий менялись, а точная идентификация остаётся дискуссионной.</p></div></div><div class="people-cards"><article><span>01 / ОБРАЗ ЖИЗНИ</span><h3>Кочевники и земледельцы</h3><p>Мобильное скотоводство было важной частью хозяйства, но в речных долинах и предгорьях развивались и оседлые занятия.</p></article><article><span>02 / СТРУКТУРА</span><h3>Иерархия и общины</h3><p>Богатые погребения указывают на социальные различия. Их конкретная структура не восстанавливается по одному кургану.</p></article><article><span>03 / КОНТАКТЫ</span><h3>Соседи и империи</h3><p>Отношения включали обмен, дипломатические контакты и конфликты. Письменные рассказы требуют критического чтения.</p></article></div></section>
+    <section class="gold-section" id="golden-man"><div class="gold-image" role="img" aria-label="Деталь золотых украшений и реконструированного сакского костюма"></div><div class="gold-copy"><div class="section-kicker">06 / ОБРАЗ И ПАМЯТЬ</div><p class="gold-label">ИСЫКСКИЙ КУРГАН · ЖЕТЫСУ</p><h2>Золотой<br><em>человек</em></h2><p>В одном из курганов Иссыкского могильника, датируемом исследователями примерно V–IV веками до н. э., найдено богато украшенное погребение молодого человека. Золотые нашивки и элементы одежды стали символом древней истории Казахстана.</p><p>Имя «Золотой человек» — современное и музейное. Точная личность погребённого неизвестна. Высокий головной убор и некоторые мотивы орнамента допускают разные интерпретации.</p><a class="text-link" href="#sites">О памятнике Иссык <span aria-hidden="true">↗</span></a></div></section>
+    <section class="culture section-pad" id="culture"><div class="section-heading"><div class="section-kicker">07 / МИР ВЕЩЕЙ</div><h2>Жизнь, обряд, <em>образ</em></h2></div><div class="culture-grid"><article class="culture-item"><span class="culture-index">A</span><h3>Конь и движение</h3><p>Коневодство, верховая езда и переносные жилища были важны для многих степных сообществ, но повседневность различалась по регионам и сезонам.</p></article><article class="culture-item"><span class="culture-index">B</span><h3>Оружие и тактика</h3><p>Лук, стрелы, копья и короткие мечи встречаются в погребальном инвентаре. Погребальные предметы не всегда означают, что ими пользовались именно так в жизни.</p></article><article class="culture-item"><span class="culture-index">C</span><h3>Обряд и погребение</h3><p>Курганы и погребальные камеры — археологические свидетельства ритуала. По ним нельзя автоматически восстановить единую религию или мифологию.</p></article><article class="culture-item"><span class="culture-index">D</span><h3>Звериный стиль</h3><p>Изображения животных и фантастических существ выполнены в золоте, бронзе и других материалах. Их смысл обсуждается; мотивы распространялись через контакты.</p></article></div></section>
+    <section class="sites-section section-pad" id="sites"><div class="section-heading"><div class="section-kicker">08 / АРХЕОЛОГИЧЕСКИЕ МЕСТА</div><h2>Курганы как <em>архивы</em></h2><p>Каждая находка — часть истории, а не её исчерпывающее объяснение.</p></div><div class="site-grid" id="site-cards"></div></section>
+    <section class="legacy section-pad" id="legacy"><div class="legacy-mark" aria-hidden="true">✳</div><div class="section-kicker">09 / НАСЛЕДИЕ</div><h2>Прошлое,<br>которое <em>говорит</em></h2><p>Саки остаются частью исторической памяти Казахстана и Центральной Азии. Археология помогает увидеть материальный мир древних сообществ, а критическое отношение к источникам — отделить находки от позднейших образов прошлого.</p><a class="round-link dark-link" href="#sources"><span>Продолжить чтение</span><span class="round-arrow" aria-hidden="true">↓</span></a></section>
+    <section class="sources section-pad" id="sources"><div class="section-heading"><div class="section-kicker">10 / БИБЛИОГРАФИЯ</div><h2>Для <em>дальнейшего чтения</em></h2><p>Подборка первичных источников и научных исследований, на которые опирается выставка.</p></div><ol class="source-list" id="source-list"></ol><p class="source-note">Датировки и идентификации могут различаться между исследователями. В экспозиции используются осторожные формулировки там, где интерпретация остаётся открытой.</p></section>
+  </main>
+  <section class="share section-pad" aria-labelledby="share-title"><div><div class="section-kicker">ПОДЕЛИТЬСЯ ВЫСТАВКОЙ</div><h2 id="share-title">История рядом</h2><p>Откройте выставку по ссылке или отсканируйте QR-код.</p><a class="text-link" href="https://new-chat-2-4173.v0.build" target="_blank" rel="noreferrer">Открыть публичный просмотр <span aria-hidden="true">↗</span></a><p class="public-url">new-chat-2-4173.v0.build</p></div><a class="qr-link" href="https://new-chat-2-4173.v0.build" target="_blank" rel="noreferrer" aria-label="Открыть публичный просмотр выставки по QR-ссылке"><img src="./qr-preview.svg" alt="QR-код для открытия публичного просмотра выставки"><span>QR · ПУБЛИЧНЫЙ ПРОСМОТР</span></a></section>\n  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">С</span><span>ПАМЯТЬ<br>СТЕПИ</span></a><p>Цифровая выставка о сакских сообществах<br>и археологическом наследии Центральной Азии</p><a href="#top" class="back-top">Наверх ↑</a><small>Учебно-образовательный проект · <span id="year"></span></small></footer>
+</body>
+</html>
